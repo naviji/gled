@@ -1,7 +1,7 @@
 Logitech G102, G103 and G203 LIGHTSYNC LED control
 ================================================
 
-`gled` is a command-line tool written in Go to control the RGB LED lighting on Logitech G102, G203, and G203L (Prodigy/Lightsync) gaming mice on Linux and macOS.
+`gled` is a command-line tool written in Go to control the RGB LED lighting on Logitech G102, G102, and G203 Lightsync gaming mice on macOS.
 
 ## Features
 
@@ -16,11 +16,6 @@ Logitech G102, G103 and G203 LIGHTSYNC LED control
 * Logitech G102, G103 and G203 Lightsync Gaming Mouse
 
 *(Device Product ID: `0xc092`, Vendor ID: `0x046d`)*
-
-## Prerequisites
-
-* **Go:** Version 1.18 or newer is recommended.
-* **libusb:** Development library version 1.0 or later. `gousb` (the Go library used by `gled`) requires `libusb` to communicate with USB devices.
 
 ## Installation
 
