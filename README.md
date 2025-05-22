@@ -33,44 +33,11 @@ Logitech G102, G103 and G203 LIGHTSYNC LED control
     brew install libusb
     ```
 
-* **Debian/Ubuntu Linux:**
-    ```bash
-    sudo apt update
-    sudo apt install libusb-1.0-0-dev
-    ```
-
-* **Fedora Linux:**
-    ```bash
-    sudo dnf install libusb1-devel
-    ```
-
-* **Arch Linux:**
-    `libusb` is likely already installed or can be installed with:
-    ```bash
-    sudo pacman -S libusb
-    ```
-    (The AUR package mentioned below will handle this dependency).
-
-* **Windows:**
-    `gousb` and `libusb` can work on Windows, but it often requires manually installing a `libusb`-compatible driver (like WinUSB) for the mouse using a tool like [Zadig](https://zadig.akeo.ie/). This process is more involved.
-
 ### 2. Install GLED
-
-#### Option A: Arch Linux (AUR)
-
-You can install `gled` from the [Arch User Repository (AUR)](https://aur.archlinux.org/packages/gled-git/) using an AUR helper (e.g., `yay` or `paru`):
-```bash
-yay -S gled-git
-# or
-paru -S gled-git
-````
-
-#### Option B: From Source (Recommended for other platforms)
-
 1.  **Clone the repository (if you haven't already):**
 
     ```bash
-    git clone [https://github.com/naviji/gled.git](https://github.com/naviji/gled.git) # Replace with your actual repo URL
+    git clone [https://github.com/naviji/gled.git](https://github.com/naviji/gled.git)
     cd gled
     ```
 
