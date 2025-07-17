@@ -26,6 +26,8 @@ Logitech G102, G103 and G203 LIGHTSYNC LED control
 * **macOS (using Homebrew):**
     ```bash
     brew install libusb
+    brew install pkg-config
+
     ```
 
 ### 2. Install GLED
@@ -37,9 +39,12 @@ Logitech G102, G103 and G203 LIGHTSYNC LED control
     ```
 
 2.  **Build the executable:**
-        ```bash
-        go build -o gled gled.go
-        ```
+    ```bash
+    export LIBUSB_PREFIX=$(brew --prefix libusb)
+    export CGO_CFLAGS="-I${LIBUSB_PREFIX}/include"
+    export CGO_LDFLAGS="-L${LIBUSB_PREFIX}/lib"
+    go build -o gled gled.go
+    ```
 
 ## Usage
 
